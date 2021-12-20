@@ -151,9 +151,9 @@ document.querySelector('.menu li.home').addEventListener('click', showHome);
 
 // add Event listener to menu Desktop options
 
-document.querySelector('.menu .menuDesk li.about').addEventListener('click', showAbout);
+document.querySelector('.menu-Desktop li.about').addEventListener('click', showAbout);
 
-document.querySelector('.menu .menuDesk li.home').addEventListener('click', showHome);
+document.querySelector('.menu .menu-Desktop li.home').addEventListener('click', showHome);
 
 document.querySelector('.LogoDesktop').addEventListener('click', showHome);
 window.addEventListener('resize', () => {
