@@ -806,6 +806,7 @@ body .hidden {
     display: flex;
     margin: 0;
     width: 49%;
+    cursor: pointer;
   }
 
   .menu-Desktop li {
