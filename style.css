@@ -27,8 +27,8 @@
 }
 
 .featuredSpeakers .speakers li img {
-  width: 40%;
-  height: 60%;
+  width: 100px;
+  height: 90px;
   margin-right: 20px;
 }
 
@@ -36,8 +36,8 @@
 .featuredSpeakers .speakers li img:active {
   -webkit-box-shadow: 10px 10px 10px 10px;
   box-shadow: 10px 10px 10px 10px;
-  width: 60%;
-  height: 60%;
+  width: 90px;
+  height: 90px;
   margin-right: 20px;
 }
 
