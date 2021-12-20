@@ -35,26 +35,22 @@ const invitees = [{
       desc: 'Ryan had been leading open-source projects at the Mozilla Foundation such as the open source move-ment.',
     }
   ];
-  function addInvitee(invitee) {
-    const li = document.createElement('li');
-    li.classList.add('invitee');
-    const inviteePPContainer = document.createElement('div');
-    inviteePPContainer.classList.add('invitee-pp-container');
-    const imgTag = document.createElement('img');
-    imgTag.setAttribute('src', invitee.photo);
-    const descInviteDiv = document.createElement('div');
-    descInviteDiv.classList.add('desc-invitee');
-    const h3 = document.createElement('h3');
-    h3.innerText = invitee.name;
-    const span1 = document.createElement('span');
-    span1.classList.add('red-text');
-    span1.innerText = invitee.job;
-    const span2 = document.createElement('span');
-    const pTag = document.createElement('p');
-    pTag.innerText = invitee.desc;
-    descInviteDiv.append(h3, span1, span2, pTag);
-    inviteePPContainer.appendChild(imgTag);
-    li.appendChild(inviteePPContainer);
-    li.appendChild(descInviteDiv);
-    inveteesList.appendChild(li);
-  }
+  function addspeakers(speakers) {
+  const imgTag = document.createElement('img');
+  imgTag.setAttribute('src', invitee.photo);
+  const descInviteDiv = document.createElement('div');
+  descInviteDiv.classList.add('desc-invitee');
+  const h3 = document.createElement('h3');
+  h3.innerText = invitee.name;
+  const span1 = document.createElement('span');
+  span1.classList.add('red-text');
+  span1.innerText = invitee.job;
+  const span2 = document.createElement('span');
+  const pTag = document.createElement('p');
+  pTag.innerText = invitee.desc;
+  descInviteDiv.append(h3, span1, span2, pTag);
+  inviteePPContainer.appendChild(imgTag);
+  li.appendChild(inviteePPContainer);
+  li.appendChild(descInviteDiv);
+  inveteesList.appendChild(li);
+}
