@@ -27,8 +27,8 @@
 }
 
 .featuredSpeakers .speakers li img {
-  width: 100px;
-  height: 90px;
+  width: 40%;
+  height: 60%;
   margin-right: 20px;
 }
 
@@ -36,8 +36,8 @@
 .featuredSpeakers .speakers li img:active {
   -webkit-box-shadow: 10px 10px 10px 10px;
   box-shadow: 10px 10px 10px 10px;
-  width: 90px;
-  height: 90px;
+  width: 60%;
+  height: 60%;
   margin-right: 20px;
 }
 
@@ -881,8 +881,8 @@ body .hidden {
   }
 
   .LogoDesktop {
-    width: 6rem;
-    height: 4.5rem;
+    width: 4rem;
+    height: 3rem;
   }
 
   .container h1 {
@@ -942,6 +942,7 @@ body .hidden {
     color: rgb(219, 216, 216);
     font-size: 11px;
     justify-self: center;
+    width: 143px;
   }
 
   .mainProgram h2.Desktop::after {
