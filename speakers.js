@@ -1,4 +1,4 @@
-const invitees = [{
+const speakers = [{
       name: 'Yochai Benkler',
       photo: 'assets/first-speaker.png',
       job: 'Berkman professor of Entrepreneurial legal Studies at Harvard Law School',
@@ -18,7 +18,7 @@ const invitees = [{
     },
     {
       name: 'Kilnam Chon',
-      photo: '"assets/fourth-speaker.png',
+      photo: 'assets/fourth-speaker.png',
       job: '',
       desc: 'Kilnam Chon helped bring the internet to Asia and is an outspoken advocate for the open web and digital com-mons In 2012, he was inducted into the inaugural class of the Internet Societys (ISOC) Internet Hall of Fame.',
     },
@@ -35,22 +35,26 @@ const invitees = [{
       desc: 'Ryan had been leading open-source projects at the Mozilla Foundation such as the open source move-ment.',
     }
   ];
-  function addspeakers(speakers) {
-  const imgTag = document.createElement('img');
-  imgTag.setAttribute('src', invitee.photo);
-  const descInviteDiv = document.createElement('div');
-  descInviteDiv.classList.add('desc-invitee');
-  const h3 = document.createElement('h3');
-  h3.innerText = invitee.name;
-  const span1 = document.createElement('span');
-  span1.classList.add('red-text');
-  span1.innerText = invitee.job;
-  const span2 = document.createElement('span');
-  const pTag = document.createElement('p');
-  pTag.innerText = invitee.desc;
-  descInviteDiv.append(h3, span1, span2, pTag);
-  inviteePPContainer.appendChild(imgTag);
-  li.appendChild(inviteePPContainer);
-  li.appendChild(descInviteDiv);
-  inveteesList.appendChild(li);
-}
+  function getSpeakers(speaker) {
+    const speakerData = `<ul class="speakers">
+    <li class="first">
+     <img src="${speaker.photo}" alt="${speaker.name}"/>
+     <span class="texContainer">
+     <span class="name">${speaker.name}</span>
+     <span class="introduce">${speaker.job}</span>
+     <span class="activity">${speaker.desc}</span>
+    </li> 
+    </ul>`;
+    return speakerData;
+  }
+
+  const speakerSection = document.querySelector('.featuredSpeakers');
+
+  function featuredSpeakers() {
+    let speakersBuild = '';
+    speakers.forEach((speaker) => {
+      speakersBuild += getSpeakers(speaker);
+    });
+    speakerSection.innerHTML = speakersBuild;
+  }
+  speakerSection.onresize = featuredSpeakers();

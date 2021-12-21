@@ -956,7 +956,7 @@ body .hidden {
 
   .speakers {
     display: grid;
-    height: 724px;
+    height: 100px;
     width: 724px;
   }
 
