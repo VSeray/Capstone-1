@@ -36,8 +36,8 @@
 .featuredSpeakers .speakers li img:active {
   -webkit-box-shadow: 10px 10px 10px 10px;
   box-shadow: 10px 10px 10px 10px;
-  width: 50%;
-  height: 50%;
+  width: 25%;
+  height: 65%;
   margin-right: 20px;
 }
 
